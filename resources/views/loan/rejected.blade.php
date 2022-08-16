@@ -1,8 +1,8 @@
-@extends('layouts.admin', ['title' => 'Data Pinjaman'])
+@extends('layouts.admin', ['title' => 'Data Pesanan'])
 
 @section('main-content')
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800">{{ $title ?? __('Pinjaman Ditolak') }}</h1>
+    <h1 class="h3 mb-4 text-gray-800">{{ $title ?? __('Pesanan Ditolak') }}</h1>
 
     <!-- Main Content goes here -->
     <table class="table table-bordered table-striped">

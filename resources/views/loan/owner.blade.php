@@ -1,8 +1,8 @@
-@extends('layouts.admin', ['title' => 'Pinjaman Pending'])
+@extends('layouts.admin', ['title' => 'Pesanan Pending'])
 
 @section('main-content')
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800">{{ $title ?? __('Pinjaman Pending') }}</h1>
+    <h1 class="h3 mb-4 text-gray-800">{{ $title ?? __('Pesanan Pending') }}</h1>
 
     <!-- Main Content goes here -->
 

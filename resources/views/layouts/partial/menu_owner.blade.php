@@ -46,7 +46,7 @@
 <li class="nav-item {{ Nav::isRoute('loan.index') }}">
     <a class="nav-link" href="{{ route('loan.index') }}">
         <i class="fas fa-fw fa-calendar"></i>
-        <span>{{ __('Pinjaman Disetujui') }}</span>
+        <span>{{ __('Pesanan Disetujui') }}</span>
     </a>
 </li>
 
@@ -54,6 +54,6 @@
 <li class="nav-item {{ Nav::isRoute('loan.rejectedLoan') }}">
     <a class="nav-link" href="{{ route('loan.rejectedLoan') }}">
         <i class="fas fa-fw fa-calendar"></i>
-        <span>{{ __('Pinjaman Ditolak') }}</span>
+        <span>{{ __('Pesanan Ditolak') }}</span>
     </a>
 </li>

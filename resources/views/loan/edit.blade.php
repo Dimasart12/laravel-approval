@@ -1,8 +1,8 @@
-@extends('layouts.admin', ['title' => 'Edit Pinjaman'])
+@extends('layouts.admin', ['title' => 'Edit Pesanan'])
 
 @section('main-content')
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800">{{ $title ?? __('Edit Pinjaman') }}</h1>
+    <h1 class="h3 mb-4 text-gray-800">{{ $title ?? __('Edit Pesanan') }}</h1>
 
     <!-- Main Content goes here -->
 

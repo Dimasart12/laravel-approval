@@ -1,12 +1,12 @@
-@extends('layouts.admin', ['title' => 'Ajukan Pinjaman'])
+@extends('layouts.admin', ['title' => 'Ajukan Pemesanan'])
 
 @section('main-content')
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800">{{ $title ?? __('Pengajuan Pinjaman') }}</h1>
+    <h1 class="h3 mb-4 text-gray-800">{{ $title ?? __('Pengajuan Pesanan') }}</h1>
 
     <!-- Main Content goes here -->
 
-    <a href="{{ route('loan.create') }}" class="btn btn-primary mb-4">Ajukan Pinjaman</a>
+    <a href="{{ route('loan.create') }}" class="btn btn-primary mb-4">Ajukan Pemesanan</a>
 
     @if (session('message'))
         <div class="alert alert-success">
