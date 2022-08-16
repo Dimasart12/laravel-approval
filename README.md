@@ -14,6 +14,7 @@
 - Run `php artisan serve` di terminal
 - Login sebagai Admin menggunakan `email` : admin@mail.com & `password` : 12345678
 - Login sebagai Owner menggunakan `email` : owner@mail.com & `password` : 12345678
+- Dan silahkan melakukan testing
 
 ## Made using
 - Framework Laravel versi 8 
