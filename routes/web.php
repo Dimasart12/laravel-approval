@@ -36,8 +36,8 @@ Route::middleware('auth')->group(function() {
     Route::resource('basic', BasicController::class)->middleware(['role:' . Role::ROLE_OWNER]);
     Route::resource('driver', DriverController::class)->middleware(['role:' . Role::ROLE_ADMIN]);
     Route::resource('vehicle', VehicleController::class)->middleware(['role:' . Role::ROLE_ADMIN]);
-    Route::get('loan/approved', 'LoanController@index')->name('loan.index');
     Route::get('loan/pending', 'LoanController@pendingLoan')->name('loan.pendingLoan')->middleware(['role:' . Role::ROLE_ADMIN]);
+    Route::get('loan/approved', 'LoanController@index')->name('loan.index');
     Route::get('loan/rejected', 'LoanController@rejectedLoan')->name('loan.rejectedLoan');
     Route::get('loan/create', 'LoanController@create')->name('loan.create')->middleware(['role:' . Role::ROLE_ADMIN]);
     Route::post('loan/store', 'LoanController@store')->name('loan.store')->middleware(['role:' . Role::ROLE_ADMIN]);

@@ -13,10 +13,11 @@
                 @method('put')
 
                 <div class="form-group">
-                    <label for="paket">Status</label>
+                    <label for="status">Status</label>
                     <select name="status_id" class="form-control" @error('status_id') is-invalid @enderror>
+                    <option value=""> -Pilih- </option>
                       @foreach ($status as $item)
-                      <option value="{{$item->id}}">{{$item->nama}}</option>
+                      <option value="{{$item->id}}" placeholder="Password">{{$item->nama}}</option>
                       @endforeach
                     </select>
                     @error('status_id')<div class="invalid-feedback">{{ $message }}</div>@enderror

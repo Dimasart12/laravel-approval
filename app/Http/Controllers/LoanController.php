@@ -105,7 +105,7 @@ class LoanController extends Controller
     public function edit(Loan $loan, $id)
     {
         $loan = Loan::findorfail($id);
-        $status = Status::orderBy('nama')->get();
+        $status = Status::orderBy('nama')->where('id', '>', 1)->get();
 
         return view('loan.edit', compact('loan', 'status'));
     }
